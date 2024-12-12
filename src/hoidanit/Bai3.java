@@ -5,9 +5,18 @@ import java.util.Scanner;
 public class Bai3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Float canh;
-		System.out.println("Vui long nhap canh:");
-		canh = sc.nextFloat();
-		System.out.println("The tich = " + Math.pow(3, canh));
+		int tax;
+		System.out.println("Nhap vao tax= ");
+		tax = sc.nextInt();
+
+		if (tax <= 10) {
+			System.out.println("khong dong thue");
+		} else if (10 < tax && tax <= 15) {
+			System.out.println("thue 10%");
+		} else if (15 < tax && tax <= 30) {
+			System.out.println("thue 20%");
+		} else {
+			System.out.println("Thue 50%");
+		}
 	}
 }
